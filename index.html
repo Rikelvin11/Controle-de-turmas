@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>DS: as turmas de desenvolvimento de sistemas </title>
+    <meta name="description" content="Aplicação para ajudar encontrar animais">
+    <meta name="keywords" content="Aplicação para ajudar encontrar animais">
+    <meta name="author" content="Aplicação para ajudar encontrar animais">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <header>
+        <nav class="menu principal">
+            <ul>
+                <li><a href="#">Lellis - A</a></li>
+                <li><a href="#">Lellis - B</a></li>
+                <li><a href="#">Pt do Am - A</a></li>
+                <li><a href="#">Pt do Am - B</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <section>
+            <section>
+                <header>
+                    <h2>Lellis Ito - A</h2>
+                </header>
+                <article>
+                    <ul class="lista-alunos" id="alunosLellisItoA">
+                        <li>Rkz</li>
+                        <li>Raphael</li>
+                    </ul>
+                </article>
+                <footer>
+                    <h3>Quantidade de Alunos <mark><p id="qtdAlunosLellisItoA">0</p></mark></h3>
+                </footer>
+            </section>
+            <section>
+                <header>
+                    <h2>Lellis Ito - B</h2>
+                </header>
+
+                <article>
+                    <ul class="lista-alunos" id="alunosLellisItoB">
+                        <li>Ariel</li>
+                        <li>Raphael</li>
+                    </ul>
+                </article>
+                <footer>
+                    <h3>Quantidade de Alunos<mark>17</mark></h3>
+                </footer>
+            </section>
+            <section>
+                <header>
+                    <h2>Pinto do Amaral - A</h2>
+                </header>
+
+                <article>
+                    <ul class="lista-alunos" id="alunosPtA">
+                        <li>Raphael</li>
+                        <li>Rkz</li>
+                    </ul>
+                </article>
+                <footer>
+                    <h3>Quantidade de Alunos<mark>17</mark></h3>
+                </footer>
+            </section>
+            <section>
+                <header>
+                    <h2></h2>Pinto do Amaral - B</h2>
+                </header>
+                <article>
+                    <ul class="lista-alunos" id="alunosPtB">
+                        <li>Thiago</li>
+                        <li>Raphael</li>
+                    </ul>
+                </article>
+                <footer>
+                    <h3>Quantidade de Alunos<mark>17</mark></h3>
+                </footer>
+            </section>
+
+        </section>
+    </section>
+    <footer>
+        <p>Desenvolvido por <b><mark><a href="#">RKZ </a></mark></b></p>
+    </footer>
+    
+    <script>
+        function contarQuantidadeAlunosTurma(ListaAlunos, qtdListaAlunos){
+            const lista = document.getElementById(listaAlunos);
+            const quantidade = lista.querySelectorAll("li").length;
+
+            document.getElementById(qtdListaAlunos).textContent = quantidade
+
+
+            
+        }
+        
+        contarQuantidadeAlunosTurma('alunosLellisItoA','qtdAlunosLellisItoA')
+
+    </script>
+</body>
+
+</html>
